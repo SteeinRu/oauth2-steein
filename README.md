@@ -50,7 +50,7 @@ if (!isset($_GET['code']))
     }
 }
 
-
+```
 ## License
 
-The MIT License (MIT). Please see [License File](/s) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/SteeinRu/oauth2-steein/blob/master/LICENSE) for more information.
