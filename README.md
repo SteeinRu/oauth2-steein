@@ -1,6 +1,6 @@
 # Steein for OAuth 2.0 Client
 
-This package Steein OAuth 2.0 support OAuth 2.0 Client.
+This package provides support for Steein OAuth 2.0 for the OAuth 2.0 PHP client.
 
 
 ## Requirements
