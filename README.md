@@ -1,6 +1,6 @@
 # Steein for OAuth 2.0 Client
 
-This package Steein OAuth 2.0 support for the PHP League's OAuth 2.0 Client.
+This package Steein OAuth 2.0 support OAuth 2.0 Client.
 
 
 ## Requirements
@@ -21,7 +21,7 @@ composer require steein/oauth2-steein
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using ```\Steein\OAuth2\Client\Steein``` as the provider.
+Usage is the same as The OAuth client, using ```\Steein\OAuth2\Client\Steein``` as the provider.
 
 
 ### Authorization Code Flow
