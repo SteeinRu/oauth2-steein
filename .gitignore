@@ -51,4 +51,3 @@ fabric.properties
 composer.lock
 vendor/
 .idea/markdown-exported-files.xml
-src/Steein/OAuth2/Client/Steein.php
