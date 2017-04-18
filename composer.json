@@ -2,7 +2,6 @@
   "name": "steein/oauth2-steein",
   "keywords": ["oauth", "oauth2", "client", "authorization", "authentication", "steein", "steein oauth2"],
   "description": "Steein OAuth 2.0 Client Provider for The PHP",
-  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
