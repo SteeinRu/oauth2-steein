@@ -4,11 +4,20 @@ This package Steein OAuth 2.0 support for the PHP League's OAuth 2.0 Client.
 
 
 ## Requirements
-
 The following versions of PHP are supported.
 
 PHP >= 5.6 
+
 HHVM
+
+## Installation
+
+To install, use composer:
+
+```
+composer require steein/oauth2-steein
+```
+
 
 ## Usage
 
