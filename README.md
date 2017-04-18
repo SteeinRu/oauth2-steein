@@ -6,7 +6,8 @@ This package provides support for Steein OAuth 2.0 for the OAuth 2.0 PHP client.
 ## Requirements
 The following versions of PHP are supported.
 
-PHP >= 5.6 
+PHP >= 5.6
+
 HHVM
 
 ## Installation
