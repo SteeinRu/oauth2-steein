@@ -21,6 +21,9 @@ composer require steein/oauth2-steein
 
 ## Usage
 
+Usage is the same as The League's OAuth client, using ```\Steein\OAuth2\Client\Steein``` as the provider.
+
+
 ### Authorization Code Flow
 
 ```php
