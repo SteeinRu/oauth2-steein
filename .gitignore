@@ -49,5 +49,4 @@ fabric.properties
 .idea/oauth2-steein.iml
 .idea/workspace.xml
 composer.lock
-src/Steein/OAuth2/Client/Steein.php
 vendor/
