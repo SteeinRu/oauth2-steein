@@ -49,7 +49,7 @@ class Steein extends AbstractProvider
      *
      * @const string
      */
-    const BASE_API_URL = 'http://www.steein.ru';
+    const BASE_API_URL = 'https://www.steein.ru';
 
     /**
      * Доступные разрешения по умолчанию
