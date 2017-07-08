@@ -58,18 +58,18 @@ class SteeinResourceOwner implements ResourceOwnerInterface, SteeinInterface
         $this->data = $response;
     }
 
-    /**
-     * Возвращает идентификатор пользователя в виде строки, если она присутствует.
+    /***
+     * Возвращает идентификатор пользователя
      *
-     * @return string|null
+     * @return integer
      */
     public function getId()
     {
         return $this->getValueByKey($this->data, 'id');
     }
 
-    /**
-     * Возвращает имя пользователя ресурса
+    /***
+     * Возвращает индивидуальное имя пользователя
      *
      * @return string|null
      */
@@ -78,8 +78,8 @@ class SteeinResourceOwner implements ResourceOwnerInterface, SteeinInterface
         return $this->getValueByKey($this->data, 'username');
     }
 
-    /**
-     * Возвращает адрес электронной почты владельца учетной записи
+    /***
+     * Возвращает адрес электронной почты
      *
      * @return string|null
      */
@@ -88,18 +88,18 @@ class SteeinResourceOwner implements ResourceOwnerInterface, SteeinInterface
         return $this->getValueByKey($this->data, 'email');
     }
 
-    /**
-     * Возвращает URL-путь к учетной записи
+    /***
+     * Возвращает полное имя и фамилию
      *
      * @return string|null
      */
-    public function getLink()
+    public function getDisplayName()
     {
-        return $this->getValueByKey($this->data, 'url');
+        return $this->getValueByKey($this->data,'displayName');
     }
 
-    /**
-     * Возвращает имя в виде строки, если она присутствует.
+    /***
+     * Возращает Имя
      *
      * @return string|null
      */
@@ -108,8 +108,8 @@ class SteeinResourceOwner implements ResourceOwnerInterface, SteeinInterface
         return $this->getValueByKey($this->data['name'], 'first_name');
     }
 
-    /**
-     * Возвращает фамилию в виде строки, если она присутствует.
+    /***
+     * Возращает Фамилию
      *
      * @return string|null
      */
@@ -118,24 +118,84 @@ class SteeinResourceOwner implements ResourceOwnerInterface, SteeinInterface
         return $this->getValueByKey($this->data['name'], 'last_name');
     }
 
-    /**
-     * Возвращает локализацию пользователя в виде строки, если она доступна.
+    /***
+     * Возращает информацию "О себе"
      *
      * @return string|null
      */
-    public function getLocale()
+    public function getDescription()
     {
-        return $this->getValueByKey($this->data, 'language');
+        return $this->getValueByKey($this->data, 'description');
+    }
+
+    /***
+     * Возвращает Страну и Город
+     *
+     * @return string|null
+     */
+    public function getCountry()
+    {
+        return $this->getValueByKey($this->data, 'country');
     }
 
     /**
-     * Возвращает аватарку профиля пользователя в виде строки, если она присутствует.
+     * Возращает ссылку на учетную записи в Steein
      *
      * @return string|null
      */
-    public function getAvatarUrl()
+    public function getLink()
     {
-        return $this->getValueByKey($this->data, 'avatar_original');
+        return $this->getValueByKey($this->data, 'link');
+    }
+
+    /***
+     * Возвращает статус "Подтврежденной страницы"
+     *
+     * @return integer
+     */
+    public function getVerified()
+    {
+        return $this->getValueByKey($this->data, 'verified');
+    }
+
+    /***
+     * Возвращает аватарку
+     *
+     * @return string|null
+     */
+    public function getAvatar()
+    {
+        return $this->getValueByKey($this->data, 'avatar');
+    }
+
+    /***
+     * Возвращает количество подписчиков
+     *
+     * @return integer
+     */
+    public function getCountFollowers()
+    {
+        return $this->getValueByKey($this->data['action'],'followers');
+    }
+
+    /***
+     * Возвращает количество пидписок
+     *
+     * @return integer
+     */
+    public function getCountFollowing()
+    {
+        return $this->getValueByKey($this->data['action'],'following');
+    }
+
+    /***
+     * Возвращает количество записей
+     *
+     * @return integer
+     */
+    public function getCountPosts()
+    {
+        return $this->getValueByKey($this->data['action'],'posts');
     }
 
     /**

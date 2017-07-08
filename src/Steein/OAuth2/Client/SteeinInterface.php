@@ -31,59 +31,101 @@ namespace Steein\OAuth2\Client;
 
 interface SteeinInterface
 {
-    /**
-     * Возвращает идентификатор пользователя в виде строки, если она присутствует.
+    /***
+     * Возвращает идентификатор пользователя
      *
-     * @return string|null
+     * @return integer
      */
     public function getId();
 
-    /**
-     * Возвращает имя пользователя ресурса
+    /***
+     * Возвращает индивидуальное имя пользователя
      *
      * @return string|null
      */
     public function getUserName();
 
-    /**
-     * Возвращает адрес электронной почты владельца учетной записи
+    /***
+     * Возвращает адрес электронной почты
      *
      * @return string|null
      */
     public function getEmail();
 
-    /**
-     * Возвращает URL-путь к учетной записи
+    /***
+     * Возвращает полное имя и фамилию
      *
      * @return string|null
      */
-    public function getLink();
+    public function getDisplayName();
 
-    /**
-     * Возвращает имя в виде строки, если она присутствует.
+    /***
+     * Возращает Имя
      *
      * @return string|null
      */
     public function getFirstName();
 
-    /**
-     * Возвращает фамилию в виде строки, если она присутствует.
+    /***
+     * Возращает Фамилию
      *
      * @return string|null
      */
     public function getLastName();
 
-    /**
-     * Возвращает локализацию пользователя в виде строки, если она доступна.
+    /***
+     * Возращает информацию "О себе"
      *
      * @return string|null
      */
-    public function getLocale();
+    public function getDescription();
+
+    /***
+     * Возвращает Страну и Город
+     *
+     * @return string|null
+     */
+    public function getCountry();
 
     /**
-     * Возвращает аватарку профиля пользователя в виде строки, если она присутствует.
+     * Возращает ссылку на учетную записи в Steein
      *
      * @return string|null
      */
-    public function getAvatarUrl();
+    public function getLink();
+
+    /***
+     * Возвращает статус "Подтврежденной страницы"
+     *
+     * @return integer
+     */
+    public function getVerified();
+
+    /***
+     * Возвращает аватарку
+     *
+     * @return string|null
+     */
+    public function getAvatar();
+
+    /***
+     * Возвращает количество подписчиков
+     *
+     * @return integer
+     */
+    public function getCountFollowers();
+
+    /***
+     * Возвращает количество пидписок
+     *
+     * @return integer
+     */
+    public function getCountFollowing();
+
+    /***
+     * Возвращает количество записей
+     *
+     * @return integer
+     */
+    public function getCountPosts();
 }
