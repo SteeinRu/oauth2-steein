@@ -97,7 +97,7 @@ class Steein extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return static::BASE_API_URL.'/api/v2.0/account/show';
+        return static::BASE_API_URL.'/api/v2.0/users/show';
     }
 
     /**
