@@ -56,7 +56,7 @@ class Steein extends AbstractProvider
      *
      * @var array
      */
-    public $defaultScopes = ['user email'];
+    public $defaultScopes = ['users email'];
 
     /**
      * Получает строку, используемую для разделения областей.
