@@ -7,7 +7,6 @@ This package provides support for Steein OAuth 2.0 for the OAuth 2.0 PHP client.
 The following versions of PHP are supported.
 
 PHP >= 5.6
-
 HHVM
 
 ## Installation
@@ -55,8 +54,8 @@ if (!isset($_GET['code']))
         $user = $provider->getResourceOwner($token);
         
         // $user->get...();
-        echo $user->getAvatarUrl().'<br />';
-        echo $user->getFirstName().'<br />';
+        echo $user->getDisplayName().'<br />';
+        echo $user->getAvatar().'<br />';
     } catch (Exception $e) {
         exit('Что та пошло не так');
     }
